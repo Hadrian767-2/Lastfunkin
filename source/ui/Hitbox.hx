@@ -22,6 +22,7 @@ class Hitbox extends FlxSpriteGroup
 	public var buttonUp:FlxButton;
 	public var buttonRight:FlxButton;
 	public var buttonBlock:FlxButton;
+	public static var tween:FlxTween;
 
 	var blockbox = false;
 	
@@ -81,9 +82,6 @@ class Hitbox extends FlxSpriteGroup
 		button.height = FlxG.height;*/
 
 		button.alpha = 0;
-
-		public static var tween;
-		tween = FlxTween;
 
 		button.onDown.callback = function (){
 			if (tween != null)
