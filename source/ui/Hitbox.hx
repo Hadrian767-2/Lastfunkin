@@ -82,7 +82,8 @@ class Hitbox extends FlxSpriteGroup
 
 		button.alpha = 0;
 
-		var tween:FlxTween;
+		var tween;
+		tween = FlxTween;
 
 		button.onDown.callback = function (){
 			if (tween != null)
