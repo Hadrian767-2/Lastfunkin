@@ -76,7 +76,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camOther);
-		FlxG.cameras.setDefaultDrawTarget = camOther;
+		dynamic FlxG.cameras.setDefaultDrawTarget = camOther;
 		
 		mainGroup = new FlxSpriteGroup();
 		mainGroup.cameras = [camGame];
