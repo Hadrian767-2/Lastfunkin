@@ -87,7 +87,7 @@ class CharacterEditorState extends MusicBeatState
 		FlxG.cameras.reset(camEditor);
 		FlxG.cameras.add(camHUD);
 		FlxG.cameras.add(camMenu);
-		FlxG.cameras.setDefaultDrawTarget = dynamic [camEditor];
+		FlxG.cameras.setDefaultDrawTarget = [camEditor];
 
 		bgLayer = new FlxTypedGroup<FlxSprite>();
 		add(bgLayer);
