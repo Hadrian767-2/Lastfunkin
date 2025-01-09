@@ -65,6 +65,7 @@ jobs:
           haxelib git linc-luajit-dee https://github.com/Daninnocent/linc_luajit.git --quiet
           haxelib install actuate 
           haxelib list
+          lime rebuild extension-webm android
           
       - name: Build Log
         run: |
