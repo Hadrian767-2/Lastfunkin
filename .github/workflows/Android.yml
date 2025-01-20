@@ -65,7 +65,13 @@ jobs:
           haxelib git linc-luajit-dee https://github.com/Daninnocent/linc_luajit.git --quiet
           haxelib install actuate 
           haxelib list
-          
+
+      - name: Upgrade Gradle
+        run: ./gradlew wrapper --gradle-version 7.6
+
+      - name: Clean Gradle cache
+        run: rm -rf ~/.gradle/caches/
+ 
       - name: Build Log
         run: |
           haxelib run lime setup android
